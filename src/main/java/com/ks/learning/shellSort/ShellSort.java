@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class ShellSort {
 
-    public static void main(String[] args) {
+    public int[] shellSort() {
         int[] intArray = {80, 12, -10, 1, 15, -20, 18, -55, 55, -1};
 
         for (int gap = intArray.length / 2; gap > 0; gap /= 2) {
@@ -24,6 +24,6 @@ public class ShellSort {
 
         System.out.println(Arrays.toString(intArray));
         System.out.println("Time complexity : (O)n square Quadratic");
-
+        return intArray;
     }
 }

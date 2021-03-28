@@ -4,12 +4,13 @@ import java.util.Arrays;
 
 public class MergeSort {
 
-    public static void main(String[] args) {
+    public int[] runMergeSort() {
         int[] intArray = {80, 12, -10, 1, 15, -20, 18, -55, 55, -1};
 
         mergeSort(intArray, 0, intArray.length);
         System.out.println(Arrays.toString(intArray));
         System.out.println("Time complexity : (O)nlogn base 2 square Quadratic");
+        return intArray;
     }
 
     public static void mergeSort(int[] input, int start, int end) {
