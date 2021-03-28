@@ -26,7 +26,7 @@ public class MergeSort {
     }
 
     public static void merge(int[] input, int start, int mid, int end) {
-
+        //change condition for descending
         if (input[mid - 1] <= input[mid]) {
             return;
         }
@@ -37,6 +37,7 @@ public class MergeSort {
 
         int[] temp = new int[end - start];
         while (i < mid && j < end) {
+            //change condition for descending
             temp[tempIndex++] = input[i] <= input[j] ? input[i++] : input[j++];
         }
 
