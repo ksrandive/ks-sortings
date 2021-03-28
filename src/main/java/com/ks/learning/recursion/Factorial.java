@@ -8,7 +8,7 @@ public class Factorial {
     // 4! = 4 * 3 * 2 * 1 = 4 * 3!
     // n! = n * (n - 1)!
 
-    public int runFactorial(String[] args) {
+    public int runFactorial() {
         System.out.println(recursiveFactorial(5));
         System.out.println(iterativeFactorial(5));
         return recursiveFactorial(5);
